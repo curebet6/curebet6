@@ -17,9 +17,10 @@
     }
     img {
       width: 100%;
-      height: auto; /* 세로에 맞게 비율을 유지 */
-      min-height: 100vh; /* 최소 높이를 화면 크기만큼 */
-      object-fit: contain; /* 이미지가 비율을 유지하며 화면에 맞게 */
+      height: 100%;
+      object-fit: contain; /* 이미지 비율을 유지하면서 최대한 크게 */
+      min-width: 100%; /* 최소 가로 크기 100% */
+      min-height: 100%; /* 최소 세로 크기 100% */
     }
   </style>
   <!-- Google tag (gtag.js) -->
