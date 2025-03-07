@@ -11,16 +11,15 @@
       padding: 0;
       display: flex;
       justify-content: center;
-      align-items: start;
+      align-items: flex-start;
       height: 100vh;
       background-color: #000;
+      overflow: auto; /* 세로 스크롤 가능 */
     }
     img {
-      width: 100%;
-      height: 100%;
-      object-fit: contain; /* 이미지 비율을 유지하면서 최대한 크게 */
-      min-width: 100%; /* 최소 가로 크기 100% */
-      min-height: 100%; /* 최소 세로 크기 100% */
+      width: 100%; /* 가로를 100% 꽉 채움 */
+      height: auto; /* 세로 비율에 맞게 자동으로 조정 */
+      object-fit: contain; /* 이미지가 비율을 유지하면서 화면에 맞게 표시 */
     }
   </style>
   <!-- Google tag (gtag.js) -->
