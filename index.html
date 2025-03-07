@@ -16,9 +16,10 @@
       background-color: #000;
     }
     img {
-      width: auto;
-      height: 100vh; /* 화면 세로 크기 맞추기 */
-      object-fit: contain; /* 이미지가 비율을 유지하면서 화면에 가득 차도록 */
+      width: 100%;
+      height: auto; /* 세로에 맞게 비율을 유지 */
+      min-height: 100vh; /* 최소 높이를 화면 크기만큼 */
+      object-fit: contain; /* 이미지가 비율을 유지하며 화면에 맞게 */
     }
   </style>
   <!-- Google tag (gtag.js) -->
