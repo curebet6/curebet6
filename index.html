@@ -5,24 +5,22 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>대한민국 No.1 메이저 식스틴</title>
-  <link rel="icon" type="image/png" href="p.png"> <!-- pavicon 추가 -->
+  <link rel="icon" type="image/png" href="p.png"> 
   <style>
     body, html {
       margin: 0;
       padding: 0;
-      width: 100vw;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
       height: 100vh;
       background-color: #000;
-    }
-    a, img {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100vw;
-      height: 100vh;
+      overflow: auto; 
     }
     img {
-      object-fit: cover; /* 이미지가 화면을 가득 채우도록 설정 */
+      width: 100%; 
+      height: auto; 
+      object-fit: contain; 
     }
   </style>
   <!-- Google tag (gtag.js) -->
@@ -43,4 +41,3 @@
 </body>
 
 </html>
-
