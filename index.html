@@ -10,17 +10,20 @@
     body, html {
       margin: 0;
       padding: 0;
-      display: flex;
-      justify-content: center;
-      align-items: flex-start;
+      width: 100vw;
       height: 100vh;
+      overflow: hidden; /* 스크롤 제거 */
       background-color: #000;
-      overflow: auto; /* 세로 스크롤 가능 */
+    }
+    a, img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
     }
     img {
-      width: 100%; /* 가로를 100% 꽉 채움 */
-      height: auto; /* 세로 비율에 맞게 자동으로 조정 */
-      object-fit: contain; /* 이미지가 비율을 유지하면서 화면에 맞게 표시 */
+      object-fit: cover; /* 이미지가 화면을 가득 채우도록 설정 */
     }
   </style>
   <!-- Google tag (gtag.js) -->
@@ -41,3 +44,4 @@
 </body>
 
 </html>
+
